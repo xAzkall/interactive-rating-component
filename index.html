@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="rating">
+        <img src="images/icon-star.svg" alt="icon star" class="icon-star" />
+        <h3 class="heading3">How did we do?</h3>
+        <p class="text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form class="rating-box">
+          <input type="radio" name="btn-rating" id="btn-rating-1" value="1" />
+          <label for="btn-rating-1" class="btn-rating">1 </label>
+          <input type="radio" name="btn-rating" id="btn-rating-2" value="2" />
+          <label for="btn-rating-2" class="btn-rating">2 </label>
+          <input type="radio" name="btn-rating" id="btn-rating-3" value="3" />
+          <label for="btn-rating-3" class="btn-rating">3 </label>
+          <input type="radio" name="btn-rating" id="btn-rating-4" value="4" />
+          <label for="btn-rating-4" class="btn-rating">4 </label>
+          <input type="radio" name="btn-rating" id="btn-rating-5" value="5" />
+          <label for="btn-rating-5" class="btn-rating">5 </label>
+        </form>
+        <button class="btn-submit">Submit</button>
+      </div>
+      <div class="thank-you hidden">
+        <img src="images/illustration-thank-you.svg" class="img" />
+        <div class="selected"></div>
+        <h3 class="heading3">Thank you!</h3>
+        <p class="text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
